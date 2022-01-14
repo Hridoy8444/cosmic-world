@@ -205,6 +205,17 @@ footer{
     align-items: center;
     
 }
+
+
+/* nav bars */
+#nav-toggler{
+   display: none; 
+}
+.nav-toggler-icon{
+    display: none;
+    color: white;
+    font-size: 30px;
+}
 /* responsive css */
 @media (max-width:950px) {
     .gallery{
@@ -233,5 +244,24 @@ footer{
     .banner-left{
         order: 2;
         padding: 50px 0;
+    }
+    .nav-toggler-icon{
+        display: block;
+    }
+    .navigation{
+        position: fixed;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        background-color: navy;
+        padding: 20px 0;
+        transform: translateY(330px); 
+        transition: .7s ease-in-out;
+        
+    }
+    #nav-toggler:checked ~ .navigation{
+        transform: translateY(0px);
     }
 }

@@ -46,7 +46,7 @@ body{
 }
 header{
     
-    background-image: url(/images/cloud.png);
+    background-image: url(./images/cloud.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(0,0,0,0.5);
